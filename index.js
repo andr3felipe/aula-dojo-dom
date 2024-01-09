@@ -13,5 +13,19 @@ const container = document.getElementById("container-color");
 
 function changeColorAndSize(){
     container.style.backgroundColor = "#00f";
-    
+    container.style.width= "400px" 
+}
+
+function normalColorAndSize(){
+  container.style.backgroundColor = "red";
+  container.style.width= "200px" 
+}
+
+let contador = 0;
+function incrementar(){
+
+}
+
+function decrementar(){
+
 }
