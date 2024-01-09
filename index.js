@@ -11,21 +11,35 @@ img1.addEventListener("mouseout", () => {
 
 const container = document.getElementById("container-color");
 
-function changeColorAndSize(){
-    container.style.backgroundColor = "#00f";
-    container.style.width= "400px" 
+function changeColorAndSize() {
+  container.style.backgroundColor = "#00f";
+  container.style.width = "400px";
 }
 
-function normalColorAndSize(){
+function normalColorAndSize() {
   container.style.backgroundColor = "red";
-  container.style.width= "200px" 
+  container.style.width = "200px";
 }
 
 let contador = 0;
-function incrementar(){
-
+function incrementar() {
+  atualizar(++contador);
 }
 
-function decrementar(){
+function decrementar() {
+  atualizar(--contador);
+}
 
+function atualizar(count) {
+  const contador = document.getElementById("contador");
+  contador.innerHTML = count;
+}
+
+function resetar() {
+  atualizar((count = 0));
+}
+
+function changeText() {
+  const text = document.getElementById("texto");
+  text.innerText = "Code Dojo DOM";
 }
